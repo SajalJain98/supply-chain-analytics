@@ -35,3 +35,43 @@ The goal is to automate data ingestion, standardize raw operational data, calcul
 ---
 
 ## 📁 Project Structure
+data/
+├── department/ # Raw source files
+├── clean/ # Cleaned datasets
+
+etl/
+├── validate_and_standardize.py
+
+snowflake_sql/
+├── 01_demand_monthly.sql
+
+
+---
+
+## 🔁 Automation
+- Python scripts automate data validation & cleaning
+- Snowflake SQL creates analytical tables
+- Power BI refreshes data from a folder-based pipeline
+
+---
+
+## 📈 Dashboard Highlights
+- Forecast vs Actual trend analysis
+- OTIF performance by product category
+- Inventory value & demand trends over time
+- Interactive filters by date and product
+
+---
+
+## 🎯 Business Impact
+This solution enables:
+- Faster decision-making
+- Early detection of forecast inaccuracies
+- Inventory optimization
+- Improved service-level tracking
+
+---
+
+## 👤 Author
+**Sajal Jain**  
+MS in Business Analytics  
