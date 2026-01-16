@@ -78,6 +78,75 @@ This solution enables:
 
 ---
 
+## 🔁 End-to-End ETL Pipeline
+
+1. **Department Data Upload**
+   - Business teams (Sales, Inventory, Demand, Fulfillment) upload raw CSV files
+     to a shared folder.
+
+2. **Python Data Validation & Standardization**
+   - A Python ETL script reads the raw files.
+   - Validates schema and required columns.
+   - Standardizes column names and data types.
+   - Outputs clean, consistent datasets.
+
+3. **Snowflake Analytics Layer**
+   - Cleaned data is loaded into Snowflake.
+   - SQL transformations calculate demand, forecast accuracy,
+     inventory metrics, and OTIF KPIs.
+
+4. **Snowflake → Python Export**
+   - Analytical tables are exported from Snowflake.
+   - Python automates the download of these exports.
+
+5. **Power BI Reporting**
+   - Power BI reads the exported CSV files from a folder.
+   - Refresh updates the dashboard with the latest data.
+
+## 🧭 ETL Pipeline Flow
+Departments upload CSV files
+│
+▼
+Shared Folder (Raw Data)
+data/department/
+│
+▼
+Python ETL
+
+Schema validation
+
+Column standardization
+
+Data quality checks
+│
+▼
+Clean Data
+data/clean/
+│
+▼
+Snowflake SQL
+
+Demand aggregation
+
+Forecast accuracy
+
+Inventory & OTIF KPIs
+│
+▼
+Snowflake Export (CSV)
+│
+▼
+Python Automation
+
+Downloads latest exports
+│
+▼
+Power BI Data Folder
+│
+▼
+Power BI Dashboard
+
 ## 👤 Author
 **Sajal Jain**  
 MS in Business Analytics  
+
