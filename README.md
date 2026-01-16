@@ -61,6 +61,10 @@ snowflake_sql/
 - Inventory value & demand trends over time
 - Interactive filters by date and product
 
+## 📷 Dashboard Preview
+![Dashboard](docs/dashboard/dashboard_overview.png)
+
+
 ---
 
 ## 🎯 Business Impact
